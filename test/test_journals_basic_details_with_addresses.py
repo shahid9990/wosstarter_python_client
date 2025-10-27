@@ -1,3 +1,4 @@
+# This file fetches journal name, issn, e_issn, publisher, country, address, edition, and category and saves it to a csv file.
 import time
 import csv
 import clarivate.wos_journals.client
@@ -86,4 +87,4 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
 
             time.sleep(0.5)
 
-print(f"\n✅ Done! Journal data saved to '{output_file}'")
+print(f"\nDone! Journal data saved to '{output_file}'")
